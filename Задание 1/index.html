@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>To-Do List</h1>
+  <input type="text" id="taskInput" placeholder="Добавить новую задачу">
+  <button onclick="addTask()">Добавить задачу</button>
+  <div>
+    <button onclick="showAllTask()">Показать все</button>
+    <button onclick="showCompleted()">Показать выполненные</button>
+    <button onclick="showInProgress()">Показать невыполненые</button>
+  </div>
+  <script src="script.js"></script>
+    <ul id="taskList">
+      <!-- Задачи будут добавляться здесь -->
+    </ul>
+</body>
+</html>

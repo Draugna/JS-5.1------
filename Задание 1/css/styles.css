@@ -1,0 +1,101 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #6DD5FA, #FF758C);
+  color: #333;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  margin-left: 0%;
+}
+
+button {
+  width:82%;
+  padding: 10px 20px;
+  margin-bottom: 2px;
+  background-color: #5F9EA0;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4682B4;
+}
+
+ul {
+  width: 83%;
+  padding: 10px 20px;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  list-style: none;
+  padding:0;
+  
+}
+
+li {
+  width: 95%;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+li span {
+  display: flex;
+  width: 50%;
+  justify-content: left;
+  align-content:center;
+  overflow-wrap: break-word;
+}
+
+li div {
+  display: flex;
+  width: 50%;
+  justify-content:space-between;
+}
+
+li:has(input:checked) span {
+  text-decoration:line-through;
+}
+
+li:has(input:checked) button {
+  background-color: red;
+}
+li:has(input:checked) button:hover {
+  background-color: rgb(139, 115, 115);
+}
+
+li button{
+  width: 40%;
+  margin-right: 10px;
+
+}
+
+div {
+  width:82%;
+  display:flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-around;
+}
+
+div.button {
+  width: 100%;
+}
